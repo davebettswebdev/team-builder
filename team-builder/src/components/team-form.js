@@ -16,8 +16,8 @@ function TeamForm(props) {
     function submitForm(e) {
 
         e.preventDefault();
-        props.addteamMember(member);
-        setteamMember ( {
+        props.addTeamMember(teamMember);
+        setTeamMember ( {
             name: "",
             role: "",
             email: "",
