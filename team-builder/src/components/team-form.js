@@ -25,8 +25,8 @@ function TeamForm(props) {
     }
 
     return (
-        <form on Submit={submitForm}>
-            <label htmlForm="name"></label>
+        <form onSubmit={submitForm}>
+            <label htmlFor="name"></label>
             <input 
                 id="name"
                 type="text"
@@ -36,7 +36,7 @@ function TeamForm(props) {
                 onChange={handleChange}
                 value={teamMember.name}
             />
-            <label htmlForm="role"></label>
+            <label htmlFor="role"></label>
             <input 
                 id="role"
                 type="text"
@@ -46,7 +46,7 @@ function TeamForm(props) {
                 onChange={handleChange}
                 value={teamMember.role}
             />
-            <label htmlForm="email"></label>
+            <label htmlFor="email"></label>
             <input 
                 id="email"
                 type="email"

@@ -15,15 +15,15 @@ function App() {
     }
   ]);
 
-  function addTeamMember(teamMember) {
+  const addTeamMember = props => {
     const newTeamMember = {
       id: Date.now(),
       name: teamMember.name,
       role: teamMember.role,
       email: teamMember.email
     };
-    setTeamMember([...teamMember, newTeamMember]);
-  }
+    setTeamMember([...teamMember, newTeamMember])
+  };
   return (
     <div className="App">
       <h1>Web26 Team Gallucci</h1>
