@@ -15,14 +15,14 @@ function App() {
     }
   ]);
 
-  const addTeamMember = props => {
+  const addTeamMember = member => {
     const newTeamMember = {
       id: Date.now(),
-      name: teamMember.name,
-      role: teamMember.role,
-      email: teamMember.email
+      name: member.name,
+      role: member.role,
+      email: member.email
     };
-    setTeamMember([...teamMember, newTeamMember])
+    setTeamMember([...teamMember, newTeamMember]);
   };
   return (
     <div className="App">
